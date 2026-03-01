@@ -1,0 +1,24 @@
+[project]
+name = "music-discovery-agent"
+version = "0.1.0"
+description = "Multi-agent music discovery app using Claude Agent SDK"
+requires-python = ">=3.10"
+dependencies = [
+    "claude-agent-sdk",
+    "pydantic>=2.0",
+    "thefuzz[speedup]",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
+
+[project.scripts]
+music-discover = "src.app:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

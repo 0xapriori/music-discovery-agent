@@ -1,0 +1,60 @@
+{
+  "user_id": "test_user",
+  "known_artists": [
+    {
+      "name": "Clipping.",
+      "genres": ["experimental hip hop", "noise rap", "industrial hip hop"],
+      "reasons_liked": ["noise production", "conceptual albums", "Daveed Diggs' rapid-fire delivery"]
+    },
+    {
+      "name": "JPEGMAFIA",
+      "genres": ["experimental hip hop", "glitch hop", "industrial hip hop"],
+      "reasons_liked": ["chaotic production", "sample-heavy beats", "abrasive textures"]
+    },
+    {
+      "name": "Death Grips",
+      "genres": ["experimental hip hop", "industrial hip hop", "noise"],
+      "reasons_liked": ["intensity", "Zach Hill drumming", "MC Ride vocals", "punk energy"]
+    },
+    {
+      "name": "Billy Woods",
+      "genres": ["underground hip hop", "abstract hip hop"],
+      "reasons_liked": ["dense lyricism", "literary references", "Backwoodz Studioz aesthetic"]
+    },
+    {
+      "name": "Sonic Youth",
+      "genres": ["noise rock", "no wave", "alternative rock"],
+      "reasons_liked": ["guitar tunings", "textural experimentation", "avant-garde approach to rock"]
+    },
+    {
+      "name": "Aesop Rock",
+      "genres": ["underground hip hop", "abstract hip hop"],
+      "reasons_liked": ["vocabulary density", "surreal imagery", "self-produced beats"]
+    },
+    {
+      "name": "Mandy Indiana",
+      "genres": ["post-punk", "industrial", "electronic"],
+      "reasons_liked": ["industrial dance energy", "French vocals over noise", "live intensity"]
+    },
+    {
+      "name": "Denzel Curry",
+      "genres": ["hip hop", "hardcore hip hop", "trap metal"],
+      "reasons_liked": ["aggressive delivery", "genre-blending", "Florida underground scene"]
+    }
+  ],
+  "dimensions": [
+    {"name": "experimental_production", "score": 9.5, "description": "Preference for unconventional, noisy, glitchy production techniques"},
+    {"name": "lyrical_density", "score": 8.5, "description": "Values complex, layered, literary lyricism"},
+    {"name": "intensity", "score": 9.0, "description": "Drawn to aggressive, high-energy, confrontational music"},
+    {"name": "genre_blending", "score": 8.0, "description": "Appreciates artists who cross genre boundaries freely"},
+    {"name": "underground_ethos", "score": 8.5, "description": "Prefers independent, DIY, anti-mainstream approaches"},
+    {"name": "conceptual_ambition", "score": 7.5, "description": "Values albums with thematic or conceptual frameworks"}
+  ],
+  "summary": "Listener with a strong preference for experimental, abrasive, and lyrically dense music spanning hip hop, noise, industrial, and post-punk. Values intensity, unconventional production, and underground independence over polish or accessibility.",
+  "anti_preferences": [
+    "overly polished pop production",
+    "generic trap beats",
+    "surface-level party lyrics",
+    "major-label sanitized versions of underground sounds"
+  ]
+}
