@@ -42,6 +42,7 @@ class DiscoverySession:
                 "mcp__music-discovery__extract_taste_profile",
                 "mcp__music-discovery__save_user_profile",
                 "mcp__music-discovery__load_user_profile",
+                "mcp__music-discovery__update_taste_profile",
                 "mcp__music-discovery__deduplicate_artists",
             ],
             max_budget_usd=MAX_BUDGET_USD,
@@ -64,6 +65,11 @@ class DiscoverySession:
             elif isinstance(message, ResultMessage):
                 if message.subtype == "error_during_execution":
                     yield f"\n[Error: {getattr(message, 'error', 'unknown error')}]\n"
+
+    async def reset(self) -> None:
+        """Tear down and reinitialize the session for a fresh discovery round."""
+        await self.close()
+        await self.start()
 
     async def close(self) -> None:
         """Disconnect the client."""
