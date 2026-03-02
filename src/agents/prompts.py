@@ -27,14 +27,14 @@ Once the profile is extracted, delegate to your subagents:
 Pass the full taste profile JSON to each subagent so they have context.
 
 ### Phase 3: Presentation & Feedback Loop
-Present the recommendations to the user. After presenting, **always** call \
-`save_recommendations_md` to save the recommendations to a markdown file. Pass the \
-user_id, the list of recommendations (each with artist_name, headline, \
-why_youll_love_it, start_with_album, start_with_tracks, and score), and a brief \
-session_summary. Mention the file path in your confirmation so users know where to \
-find their saved recommendations.
+Present the recommendations to the user. After presenting, ask the user if they'd \
+like the recommendations saved to a markdown file. If the user says yes, call \
+`save_recommendations_md` with the user_id, the list of recommendations (each with \
+artist_name, headline, why_youll_love_it, start_with_album, start_with_tracks, and \
+score), and a brief session_summary. Mention the file path in your confirmation so \
+users know where to find their saved recommendations.
 
-After saving, stay in an active feedback \
+Then stay in an active feedback \
 loop. Handle these common responses with specific actions:
 
 - **"I already know that artist"** → Call `update_taste_profile` with `add_artists` to \
