@@ -5,6 +5,7 @@ from __future__ import annotations
 from claude_agent_sdk import create_sdk_mcp_server
 
 from .deduplication import deduplicate_artists
+from .recommendations import save_recommendations_md
 from .taste_profile import (
     extract_taste_profile,
     load_user_profile,
@@ -21,5 +22,6 @@ music_tools_server = create_sdk_mcp_server(
         load_user_profile,
         update_taste_profile,
         deduplicate_artists,
+        save_recommendations_md,
     ],
 )

@@ -11,9 +11,11 @@ load_dotenv()
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 PROFILES_DIR = DATA_DIR / "profiles"
+RECOMMENDATIONS_DIR = DATA_DIR / "recommendations"
 
 # Ensure dirs exist
 PROFILES_DIR.mkdir(parents=True, exist_ok=True)
+RECOMMENDATIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 # API — no ANTHROPIC_API_KEY here; the Claude Agent SDK spawns a `claude` CLI
 # subprocess that will use your existing Claude subscription auth.

@@ -44,6 +44,7 @@ class DiscoverySession:
                 "mcp__music-discovery__load_user_profile",
                 "mcp__music-discovery__update_taste_profile",
                 "mcp__music-discovery__deduplicate_artists",
+                "mcp__music-discovery__save_recommendations_md",
             ],
             max_budget_usd=MAX_BUDGET_USD,
         )
